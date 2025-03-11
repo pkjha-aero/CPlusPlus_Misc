@@ -2,7 +2,7 @@
 // Tips: Default func args can only be from the right
 // char * is deprecated
 #include<iostream>
-#include<conio.h>
+//#include<conio.h>
 #include<cstring>
 using namespace std;
 

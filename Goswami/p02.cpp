@@ -26,6 +26,7 @@ void queue::qput(int i)
     }
   sloc++;
   q[sloc]=i;
+  cout<< "Added " << i << " to the queue at the location " << sloc << "\n";
 }
 
 int queue::qget()
@@ -36,6 +37,7 @@ int queue::qget()
       return 0;
     }
   rloc++;
+  cout<< "Returning " << q[rloc] << " from the queue at the location " << rloc << "\n";
   return q[rloc];
 }
 
@@ -48,8 +50,10 @@ main()
   b.qput(19);
   a.qput(20);
   b.qput(1);
+  /*
   cout<<a.qget()<<",";
   cout<<a.qget()<<",";
   cout<<b.qget()<<",";
   cout<<b.qget()<<"\n";
+  */
 }

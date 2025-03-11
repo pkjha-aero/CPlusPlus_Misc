@@ -64,9 +64,9 @@ main()
   String a("Hello"),b("There"),c,d(" ");
   c=a+d+b;
   c.show();
-  c=c+"How are you?"+d;
+  c=c + d + "How are you?";
   c.show();
-  c=c+" What is your name?";
+  c=c + d + "What is your name?";
   c.show();
   b="It's fun";
   b.show();
