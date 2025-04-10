@@ -48,6 +48,8 @@ main()
   p->showname();
   p=&D_ob;
   p->showname();
+  // A pointer to base class can be used to point to an object of derived class
+  // But using that pointer only inherited members can be accessed
   //p->putphone("123456");//no matching fun 4 call to B_class::putphone
   // Error in DevC++: 'class B_class' has no member named 'putphone'
   //p->showphone();
