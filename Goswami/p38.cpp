@@ -11,7 +11,7 @@ public:
     x=a;y=b;z=c;
   }
 };
-ostream &operator<<(ostream &var,cl obj)
+ostream &operator<<(ostream &var,cl &obj) // passing 'obj' by reference is NOT a must
 {
   var<<obj.x<<",";  //'var' can be replaced by any variable name
   var<<obj.y<<",";

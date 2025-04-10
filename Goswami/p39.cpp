@@ -10,9 +10,9 @@ public:
   {
     x=a;y=b;z=c;
   }
-  friend ostream &operator<<(ostream & stream,cl obj);
+  friend ostream &operator<<(ostream & stream,cl &obj);
 };
-ostream &operator<<(ostream &var,cl obj)  // passing 'obj' by reference is not  a must
+ostream &operator<<(ostream &var,cl &obj) // passing 'obj' by reference is NOT a must
 {
   var<<obj.x<<",";  //'var' can be replaced by any variable name
   var<<obj.y<<",";
