@@ -1,5 +1,6 @@
 // Pure Virtual function and Abstract Class
-// Tip: 
+// Tip: We can't declare any obj of abstract base class, but can declare a pointer to it
+// Tip: virtual base func doesn't have any body
 #include<iostream>
 #include<string.h>
 using namespace std;
@@ -31,7 +32,7 @@ public:
 
 main()
 {
-  base *p;  // we cant declare any obj of type base,but can declare pointer
+  base *p;  // We can't declare any obj of abstract base class, but can declare pointer
   fd fobj;
   sd sobj;
   //p=&base_obj;
